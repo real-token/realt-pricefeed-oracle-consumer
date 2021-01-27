@@ -1,0 +1,41 @@
+{
+  "name": "realt-pricefeed-oracle",
+  "version": "1.0.0",
+  "description": "RealT Price Feed Consumer which calls a Chainlink node Job to get RealT Token Prices.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.1.2",
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "@chainlink/test-helpers": "0.0.5",
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "mocha": "^8.2.1",
+    "truffle": "^5.1.63"
+  },
+  "scripts": {
+    "compile": "npx truffle compile",
+    "console:dev": "npx truffle console --network cldev",
+    "console:live": "npx truffle console --network live",
+    "depcheck": "echo '@chainlink/box' && depcheck --ignore-dirs=build/contracts || true",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "lint": "yarn solhint",
+    "migrate:dev": "npx truffle migrate --reset --network cldev",
+    "migrate:kovan": "npx truffle migrate --network kovan",
+    "migrate:live": "npx truffle migrate --network live",
+    "test": "npx truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/real-token/realt-pricefeed-oracle.git"
+  },
+  "author": "astor@realt.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/real-token/realt-pricefeed-oracle/issues"
+  },
+  "homepage": "https://github.com/real-token/realt-pricefeed-oracle#readme"
+}
