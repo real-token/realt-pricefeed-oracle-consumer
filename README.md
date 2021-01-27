@@ -1,4 +1,4 @@
-# realt-pricefeed-oracle
+# realt-pricefeed-oracle-consumer
 Real Token Chainlink Consumer contract which requests the Token Price from RealT Servers via Chainlink Oracle.
 
 Prices are returned in Prices.USD and Prices.ETH rates for current token price.
